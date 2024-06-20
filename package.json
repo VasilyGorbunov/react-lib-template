@@ -1,6 +1,7 @@
 {
   "name": "@gp-frontend-lib/react-lib-template",
-  "version": "0.0.7",
+  "version": "0.0.8",
+  "author": "Vasily Gorbunov <vasily.gorbunov@gmail.com>",
   "private": false,
   "main": "dist/bundle.min.js",
   "files": [
@@ -12,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VasilyGorbunov/react-lib-template.git"
+    "url": "https://github.com/VasilyGorbunov/react-lib-template.git"
   },
   "dependencies": {
     "antd": "^5.18.0",

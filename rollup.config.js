@@ -4,7 +4,6 @@ import typescript from "@rollup/plugin-typescript";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
 import del from "rollup-plugin-delete";
-import copy from "rollup-plugin-copy";
 
 export default {
   input: "src/index.ts",
@@ -18,7 +17,6 @@ export default {
       format: "esm",
       name: "version",
       sourcemap: true,
-      // plugins: [terser()],
     },
   ],
 
@@ -30,9 +28,6 @@ export default {
     typescript({ tsconfig: "./tsconfig.json" }),
     postcss({
       extract: "index.css",
-    }),
-    copy({
-      targets: [{ src: "src/static/fonts", dest: "dist/" }],
     }),
   ],
 };

@@ -1,12 +1,19 @@
 {
-  "name": "react-lib-template",
-  "version": "0.0.1",
+  "name": "@gp-frontend-lib/react-lib-template",
+  "version": "0.0.7",
   "private": false,
   "main": "dist/bundle.min.js",
   "files": [
     "dist"
   ],
   "types": "dist/types/index.d.ts",
+  "publishConfig": {
+    "registry": "https://nexus.dear.com.ru/repository/gp-gasps-npm/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VasilyGorbunov/react-lib-template.git"
+  },
   "dependencies": {
     "antd": "^5.18.0",
     "styled-components": "^6.1.11"
@@ -58,15 +65,6 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-replace": "^4.0.0",
     "@rollup/plugin-typescript": "^8.3.2",
-    "@storybook/addon-controls": "^6.5.8",
-    "@storybook/addon-essentials": "^6.5.8",
-    "@storybook/addon-interactions": "^6.5.8",
-    "@storybook/addon-links": "^6.5.8",
-    "@storybook/builder-webpack5": "^6.5.8",
-    "@storybook/manager-webpack5": "^6.5.8",
-    "@storybook/preset-create-react-app": "^4.1.2",
-    "@storybook/react": "^6.5.8",
-    "@storybook/testing-library": "^0.0.11",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
